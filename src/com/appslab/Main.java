@@ -1,15 +1,20 @@
 package com.appslab;
-import java.lang.reflect.Array;
-import java.util.List;
-import java.util.Arrays;
+import java.util.*;
 public class Main {
-
+    public static ArrayList<Integer> array = new ArrayList<Integer>();
     public static void main(String[] args) {
 
-        List<Integer> array = Arrays.asList(1, 1, 1, 2, 2, 3, 4, 5);
-        if (array.isEmpty())
-            System.out.println("The ArrayList is empty");
-        else
-            array.forEach((n) -> System.out.println(n));
+        array.addAll(Arrays.asList(1, 1, 1, 2, 2, 3, 4, 5));
+        addIfNotExist(6);
+        System.out.println();
     }
-}
+    public static void addIfNotExist(int number) {
+        if (array.contains(number))
+            array.forEach((n) -> System.out.println(n));
+        else{
+            array.add(number);
+            array.forEach(System.out::println);
+        }
+    }
+
+    }
