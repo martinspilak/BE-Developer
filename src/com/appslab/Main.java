@@ -1,7 +1,6 @@
 package com.appslab;
 import java.lang.reflect.Array;
-import java.util.List;
-import java.util.Arrays;
+import java.util.*;
 public class Main {
 
     public static void main(String[] args) {
@@ -10,6 +9,6 @@ public class Main {
         if (array.isEmpty())
             System.out.println("The ArrayList is empty");
         else
-            array.forEach((n) -> System.out.println(n));
+            array.forEach(System.out::println);
     }
 }
