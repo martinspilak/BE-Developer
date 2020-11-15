@@ -5,11 +5,11 @@ public class Main {
     public static void main(String[] args) {
 
         array.addAll(Arrays.asList(1, 1, 1, 2, 2, 3, 4, 5));
-        RemoveEven();
+        ReturnEven();
         System.out.println();
     }
-    public static void RemoveEven() {
-        array.stream().filter(a -> a % 2 != 0).forEach(System.out::println);
+    public static void ReturnEven() {
+        array.stream().filter(a -> a % 2 == 0).forEach(System.out::println);
             }
 }
 
