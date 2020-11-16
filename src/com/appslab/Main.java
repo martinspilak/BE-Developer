@@ -12,7 +12,7 @@ public class Main {
     }
 
     public static void Multiple() {
-        array.stream().map(a -> a * array.size() + ", ").forEach(System.out::print);
+        array.stream().map(a -> a * array.size() + ", ").forEach(System.out::print); //8, 8, 8, 16, 16, 24, 32, 40,
         }
     }
 
