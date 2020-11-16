@@ -1,4 +1,5 @@
 package com.appslab;
+import java.lang.reflect.Array;
 import java.util.*;
 public class Main {
     public static void main(String[] args) {
@@ -10,11 +11,11 @@ public class Main {
         };
         System.out.println(PeoplesBudget(obj));
     }
-    public static int PeoplesBudget(Person[] people){
-        return Arrays.stream(people).map(Person::getBudget).reduce(0, Integer::sum);
+    public static boolean PeoplesBudget(Person[] people){
+        return Arrays.stream(people).map(Person::getName).anyMatch(a -> a.contains("a"));
             }
 }
-// Output: 65700
+// Output: true
 
 
 
