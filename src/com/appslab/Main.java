@@ -12,8 +12,10 @@ public class Main {
         array.stream().filter(a -> a % 2 == 0).forEach(System.out::println);
             }
 }
-
-
+/* Output: 2
+           2
+           4
+*/
 
 
 
