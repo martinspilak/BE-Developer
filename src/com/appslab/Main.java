@@ -12,8 +12,12 @@ public class Main {
         array.stream().filter(a -> a % 2 != 0).forEach(System.out::println);
             }
 }
-
-
+/* Output: 1
+           1
+           1
+           3
+           5
+*/
 
 
 
