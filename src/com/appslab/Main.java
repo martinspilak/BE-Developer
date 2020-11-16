@@ -1,21 +1,20 @@
 package com.appslab;
 import java.util.*;
 public class Main {
-    public static ArrayList<Integer> array = new ArrayList<Integer>();
     public static void main(String[] args) {
 
-        array.addAll(Arrays.asList(1, 1, 1, 2, 2, 3, 4, 5));
-        ReturnEven();
-        System.out.println();
+        Person[] obj = new Person[]{
+                new Person("John", 21, 23000),
+                new Person("Steve", 32, 40000),
+                new Person("Martin", 16, 2700)
+        };
+        System.out.println(PeoplesBudget(obj));
     }
-    public static void ReturnEven() {
-        array.stream().filter(a -> a % 2 == 0).forEach(System.out::println);
+    public static int PeoplesBudget(Person[] people){
+        return Arrays.stream(people).map(Person::getBudget).reduce(0, Integer::sum);
             }
 }
-/* Output: 2
-           2
-           4
-*/
+// Output: 65700
 
 
 
