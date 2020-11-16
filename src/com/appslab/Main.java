@@ -12,3 +12,12 @@ public class Main {
             array.forEach(System.out::println);
     }
 }
+/* Output: 1
+           1
+           1
+           2
+           2
+           3
+           4
+           5
+*/
