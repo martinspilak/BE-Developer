@@ -11,7 +11,7 @@ public class Main {
       System.out.println(colors);
 }
 }
-// {Red=1, White=4, Black=3, Green=2}
+// Output: {Red=1, White=4, Black=3, Green=2}
 
 
 
