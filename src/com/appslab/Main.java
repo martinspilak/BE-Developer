@@ -3,17 +3,15 @@ import java.lang.reflect.Array;
 import java.util.*;
 public class Main {
     public static void main(String[] args) {
-        List<Integer> array = Arrays.asList(1, 1, 1, 2, 2, 3, 4, 5);
-        HashSet<Integer> hashset = new HashSet<Integer>(array);
-        hashset.add(1);
-        hashset.forEach(System.out::println);
+      HashMap<String, Integer> colors = new HashMap<String, Integer>();
+      colors.put("Red", 1);
+      colors.put("Green", 2);
+      colors.put("Black", 3);
+      colors.put("White", 4);
+      System.out.println(colors);
 }
 }
-/* Output: 1
-           2
-           3
-           4
-           5
-*/
+// {Red=1, White=4, Black=3, Green=2}
+
 
 
