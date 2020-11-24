@@ -1,14 +1,14 @@
 package com.appslab;
+import java.lang.*;
 
-public class Programmer {
-    float Salary;
-    int Bonus;
+public class Programmer extends JobType {
+    Jobtype jobtype = Jobtype.Programmer;
 
-    public Programmer(){
-        Salary = 1700.0f;
-        Bonus = 200;
+    public Programmer(float salary, int bonus) {
+        super(salary, bonus);
     }
-    public String getInfo(){
-        return "Programmer’s salary is " + Salary + " and bonus is " + Bonus;
+
+    public void getInfo() {
+        System.out.println(jobtype + "'s" + " salary is " + Salary + " and bonus is " + Bonus+".");
     }
 }
