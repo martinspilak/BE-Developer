@@ -7,8 +7,8 @@ public class Main {
     System.out.println(teacher.getInfo());
     }
 }
-/* Output: Programmer’s salary is 2000.0 and bonus is 200
-           Teacher’s salary is 900.0 and bonus is 100
+/* Output: Programmer’s salary is 1700.0 and bonus is 200
+           Teacher’s salary is 900.0 and bonus is 300
 */
 
 

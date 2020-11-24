@@ -6,7 +6,7 @@ public class Teacher {
 
     public Teacher(){
         Salary = 900.0f;
-        Bonus = 100;
+        Bonus = 300;
     }
     public String getInfo(){
         return "Teacher’s salary is " + Salary + " and bonus is " + Bonus;

@@ -5,7 +5,7 @@ public class Programmer {
     int Bonus;
 
     public Programmer(){
-        Salary = 2000.0f;
+        Salary = 1700.0f;
         Bonus = 200;
     }
     public String getInfo(){
