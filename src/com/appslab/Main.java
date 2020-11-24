@@ -1,20 +1,14 @@
 package com.appslab;
-import java.lang.reflect.Array;
-import java.util.*;
 public class Main {
     public static void main(String[] args) {
-      HashMap<String, Integer> colors = new HashMap<String, Integer>();
-      colors.put("Red", 1);
-      colors.put("Green", 2);
-      colors.put("Black", 3);
-      colors.put("White", 4);
-      System.out.println("HashMap: " + colors);
-      colors.putIfAbsent("Blue", 5);
-      System.out.println("New HashMap: " + colors);
+    Programmer programmer = new Programmer();
+    System.out.println(programmer.getInfo());
+    Teacher teacher = new Teacher();
+    System.out.println(teacher.getInfo());
+    }
 }
-}
-/* Output: HashMap: {Red=1, White=4, Black=3, Green=2}
-           New HashMap: {Red=1, White=4, Blue=5, Black=3, Green=2}
+/* Output: Programmer’s salary is 2000.0 and bonus is 200
+           Teacher’s salary is 900.0 and bonus is 100
 */
 
 
