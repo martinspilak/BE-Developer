@@ -1,9 +1,9 @@
 package com.appslab;
 public class Main {
     public static void main(String[] args) {
-    Programmer programmer = new Programmer(1700.0f, 200);
+    Employee programmer = Employee.PROGRAMMER;
     programmer.getInfo();
-    Teacher teacher = new Teacher(900.0f, 300);
+    Employee teacher = Employee.TEACHER;
     teacher.getInfo();
     }
 }

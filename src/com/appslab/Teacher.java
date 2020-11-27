@@ -1,12 +1,10 @@
 package com.appslab;
 
-public class Teacher extends JobType {
-    Jobtype jobtype = Jobtype.Teacher;
+public class Teacher {
+    Employee employees = Employee.TEACHER;
 
-    public Teacher(float salary, int bonus) {
-        super(salary, bonus);
+    public Teacher(String name, float salary, int bonus) {
+
     }
-    public void getInfo() {
-        System.out.println(jobtype + "'s" + " salary is " + Salary + " and bonus is " + Bonus+".");
-    }
+
 }
