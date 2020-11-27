@@ -1,14 +1,26 @@
 package com.appslab;
 
 public class Programmer {
-    float Salary;
-    int Bonus;
+   private float salary;
+   private int bonus;
 
-    public Programmer(){
-        Salary = 1700.0f;
-        Bonus = 200;
-    }
     public String getInfo(){
-        return "Programmer’s salary is " + Salary + " and bonus is " + Bonus;
+        return "Programmer’s salary is " + salary + " and bonus is " + bonus;
+    }
+
+    public float getSalary() {
+        return salary;
+    }
+
+    public void setSalary(float salary) {
+        this.salary = salary;
+    }
+
+    public int getBonus() {
+        return bonus;
+    }
+
+    public void setBonus(int bonus) {
+        this.bonus = bonus;
     }
 }
