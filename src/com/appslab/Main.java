@@ -9,9 +9,9 @@ public class Main {
                 new Person("Steve", 32, 40000),
                 new Person("Martin", 16, 2700)
         };
-        System.out.println(PeoplesBudget(obj));
+        System.out.println(peoplesbudget(obj));
     }
-    public static boolean PeoplesBudget(Person[] people){
+    public static boolean peoplesbudget(Person[] people){
         return Arrays.stream(people).map(Person::getName).anyMatch(a -> a.contains("a"));
             }
 }
