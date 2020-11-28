@@ -1,10 +1,8 @@
 package com.appslab;
 
-public class Teacher {
-    Employee employees = Employee.TEACHER;
-
-    public Teacher(String name, float salary, int bonus) {
-
+public class Teacher extends  JobType{
+    public Teacher(float salary, int bonus){
+        super(salary, bonus, Employee.TEACHER);
     }
 
 }
