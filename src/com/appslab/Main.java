@@ -12,7 +12,7 @@ public class Main {
         }
     }
 
-/* Output: Programmer's salary is 1700.0 and bonus is 200.
+/* Output: Programmer's salary is 1900.0.
            Teacher's salary is 900.0 and bonus is 300.
            Driver's salary is 1000.0 and bonus is 300.
 */
