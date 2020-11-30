@@ -1,4 +1,4 @@
-package com.appslab;
+package com.appslab.model;
 
 public class Driver extends  JobType{
     public Driver(float salary, int bonus){

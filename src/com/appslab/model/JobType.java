@@ -1,6 +1,9 @@
-package com.appslab;
+package com.appslab.model;
+import com.appslab.EmployeeServiceImpl;
+import java.awt.*;
+import java.util.Collections;
 
-public class JobType {
+public class JobType   {
     public float salary;
     public int bonus;
     public Employee employee;

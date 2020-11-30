@@ -1,4 +1,4 @@
-package com.appslab;
+package com.appslab.model;
 import java.lang.*;
 
 public class Programmer extends JobType   {

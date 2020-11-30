@@ -1,4 +1,4 @@
-package com.appslab;
+package com.appslab.model;
 
 public class Teacher extends  JobType{
     public Teacher(float salary, int bonus){
